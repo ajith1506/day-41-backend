@@ -11,7 +11,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 mongoose
-  .connect("mongodb://localhost:27017/test")
+  .connect(
+    "mongodb+srv://ajithkumararun1111:PBESGxZEFDZCzWRU@cluster0.c3bzoik.mongodb.net/forgetPassword"
+  )
   .then(() => {
     console.log("db connected");
   })
